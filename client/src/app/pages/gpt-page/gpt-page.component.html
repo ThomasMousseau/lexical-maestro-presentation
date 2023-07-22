@@ -8,12 +8,15 @@
   <body>
     <div class="">
       <app-navbar></app-navbar>
-      <div id="gpt-container">
-        <div id="button-container">
-          <button>bonjour</button>
-          <button>bonjour</button>
+      <div
+        id="gpt-container"
+        class="flex flex-row justify-around h-full w-full"
+      >
+        <div id="button-container" class="h-40 flex flex-col justify-around">
+          <button mat-raised-button class="p-2">Download Model</button>
+          <button mat-raised-button class="p-2">Injest Data</button>
         </div>
-        <app-chatbox> </app-chatbox>
+        <app-chatbox class="w-1/2"> </app-chatbox>
       </div>
     </div>
   </body>

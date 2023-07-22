@@ -9,6 +9,8 @@ import { GptPageComponent } from './pages/gpt-page/gpt-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AboutUsPageComponent,
     NavbarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
