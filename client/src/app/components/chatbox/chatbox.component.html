@@ -11,6 +11,7 @@
   <div class="border-t-2 border-gray-200">
     <div id="input-container" class="flex border">
       <textarea
+        id="input-field"
         type="text"
         tabindex="0"
         rows="1"
@@ -18,11 +19,14 @@
         class="message-input w-full p-2 bg-none border-none outline-none resize-none"
         required
         [(ngModel)]="message"
+        (keydown.enter)="sendMessage()"
+        #textarea
       ></textarea>
       <button
         type="submit"
         class="items-center justify-center rounded-lg p-2"
         (click)="sendMessage()"
+        #sendButton
       >
         Send
       </button>
