@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body class="w-full h-full max-h-screen bg-BackgroundColor">
-    <div class="">
-      <app-navbar></app-navbar>
+  <body class="w-full h-full max-h-screen bg-BackgroundColor overflow-hidden">
+    <div class="overflow-x-hidden">
+      <app-navbar id="navbar"></app-navbar>
       <section
         id="presentation"
-        class="overflow-y-hidden flex flex-col justify-evenly text-white"
+        class="overflow-hidden flex flex-col justify-evenly text-white"
       >
         <div id="title" class="flex flex-col items-center">
           <h1 class="text-3xl text-center">ABOUT US</h1>
@@ -19,15 +19,15 @@
             Montreal
           </p>
         </div>
-        <div id="students presentation" class="flex flex-row justify-aroun m-5">
-          <div id="Thomas presentation" class="flex flex-col items-center m-2">
+        <div id="studentPresentation" class="flex flex-row justify-aroun m-5">
+          <div id="ThomasPresentation" class="flex flex-col items-center m-2">
             <p class="text-xl text-center m-2">Thomas Mousseau</p>
             <p class="text-justify">
               Lorem ipsum dolor sit amet consectetur. Sem arcu tincidunt orci
               egestas dictumst pharetra fermentum. Sed in dolor porta nisl.
             </p>
           </div>
-          <div id="Alex presentation" class="flex flex-col items-center m-2">
+          <div id="AlexPresentation" class="flex flex-col items-center m-2">
             <p class="text-xl text-center m-2">Alexandre Veillette</p>
             <p class="text-justify">
               Lorem ipsum dolor sit amet consectetur. Sem arcu tincidunt orci
