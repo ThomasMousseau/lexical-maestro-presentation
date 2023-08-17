@@ -7,7 +7,7 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       navBackColor: "#3174af",
-      BackgroundColor: "#23272e"
+      BackgroundColor: "#2D2E32"
     },
     extend: {},
   },
