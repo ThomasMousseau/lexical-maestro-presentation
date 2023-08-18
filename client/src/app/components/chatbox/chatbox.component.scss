@@ -2,16 +2,7 @@
   overflow-y: auto;
 }
 #cell {
-  background-color: rgb(35, 35, 35);
-  border: 3px solid black;
-  border-bottom-width: 18px;
-  border-radius: .735vh;
-  border-bottom-radius: 3.736vh;
   box-shadow: 0 2px 0 5px var(--case-color);
-  height: 63.5vh;
-  margin: 15vh auto 15vh auto;
-  position: relative;
-  width: 36.5vh;
 }
 
 #cell::after {
