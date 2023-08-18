@@ -1,9 +1,9 @@
 <div
   #message
-  class="message-container flex flex-col border border-black m-2 font-mono"
+  class="message-container flex flex-col w-full font-mono border rounded mb-1 bg-white"
 >
   <p class="sender-name text-black">{{ sender }}</p>
   <div class="text-message">
-    <p class="text">{{ pMessage }}</p>
+    <p class="text max-w-full">{{ pMessage }}</p>
   </div>
 </div>
