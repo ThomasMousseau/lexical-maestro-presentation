@@ -8,15 +8,15 @@
 #cell::after {
   background-color: black;
   border: 1px solid rgba(235, 235, 235, .2);
-  border-radius: 100%;
+  border-radius: 10px;
   box-shadow: 0 0 3px rgba(0, 0, 0, .6);
   content: '';
-  left: calc(53.5% - 15px);
+  left: 40%;
   position: absolute;
-  right: calc(53.5% - 15px);
+  
   top: 1.265vh;
-  height: 10px;
-  width: 10px;
+  height: 2vh;
+  width: 8vh;
   z-index: 1;
 }
 
