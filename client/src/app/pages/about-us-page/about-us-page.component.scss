@@ -10,24 +10,62 @@
 }
 @keyframes slideToLeft {
     from {
-        transform: translateX(100px);
-        opacity: 0;
+        transform: translateX(0);
+        opacity: 1;
     }
     to {
-        transform: translateX(0);
+        transform: translateX(-32vh);
         opacity: 1;
     }
 }
 @keyframes slideToRight {
     from {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    to {
         transform: translateX(0);
         opacity: 1;
     }
+    to {
+        transform: translateX(32vh);
+        opacity: 1;
+    }
 }
+@keyframes slideAllLeft { 
+    from {
+        transform: translateX(32vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-32vh);
+        opacity: 1;
+    }
+}
+@keyframes slideAllRight { 
+    from {
+        transform: translateX(-32vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(32vh);
+        opacity: 1;
+    }
+}
+
+.slideRight{
+    animation: slideToRight 1.5s ease-in-out;
+    animation-fill-mode: both; 
+}
+.slideLeft{
+    animation: slideToLeft 1.5s ease-in-out;
+    animation-fill-mode: both; 
+}
+.slideAllLeft{
+    animation: slideAllLeft 1.5s ease-in-out;
+    animation-fill-mode: both; 
+}
+.slideAllRight{
+    animation: slideAllRight 1.5s ease-in-out;
+    animation-fill-mode: both; 
+}
+
 #presentation{
     height: 90vh;
 }
@@ -40,3 +78,9 @@
 #AlexPresentation{
     animation: slideToLeft 3s ease-in-out 1s 1 normal backwards ;
 }
+
+
+
+// #leftScreen:hover ~ #middleBar{
+//     animation: midBarslideToLeft 3s ease-in-out 1s 1 normal backwards;
+// }

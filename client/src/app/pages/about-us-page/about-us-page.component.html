@@ -5,37 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body class="w-full h-full max-h-screen bg-BackgroundColor overflow-hidden">
-    <div class="overflow-x-hidden">
-      <app-navbar id="navbar"></app-navbar>
-      <section
-        id="presentation"
-        class="overflow-hidden flex flex-col justify-evenly text-black"
-      >
-        <div id="title" class="flex flex-col items-center">
-          <h1 class="text-3xl text-center">ABOUT US</h1>
-          <p class="text-center">
-            We are two students in software engineering at Polytechnique
-            Montreal
-          </p>
-        </div>
-        <div id="studentPresentation" class="flex flex-row justify-evenly m-5">
-          <div id="ThomasPresentation" class="flex flex-col items-center m-2">
-            <p class="text-xl text-center m-2">Thomas Mousseau</p>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet consectetur. Sem arcu tincidunt orci
-              egestas dictumst pharetra fermentum. Sed in dolor porta nisl.
-            </p>
+  <body
+    class="w-full h-full max-h-screen bg-BackgroundColor overflow-hidden"
+    #body
+  >
+    <div class="">
+      <app-navbar></app-navbar>
+      <div
+        class="absolute h-[55vh] w-[0.5vh] bg-grey left-1/2 right"
+        id="middleBar"
+        #middleBar
+      ></div>
+      <div class="monitor flex flex-col items-center mt-[5vh]">
+        <div
+          class="h-[37vh] w-[64vh] bg-white border-[6px] border-b-[30px] rounded-[2vh]"
+        >
+          <!-- Screen Content -->
+          <div class="h-full w-full flex flex-row">
+            <div
+              class="h-full w-1/2 flex items-center justify-center"
+              id="leftScreen"
+              #leftScreen
+            >
+              a
+            </div>
+            <div
+              class="h-full w-1/2 flex items-center justify-center"
+              id="rightScreen"
+              #rightScreen
+            >
+              b
+            </div>
           </div>
-          <div id="AlexPresentation" class="flex flex-col items-center m-2">
-            <p class="text-xl text-center m-2">Alexandre Veillette</p>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet consectetur. Sem arcu tincidunt orci
-              egestas dictumst pharetra fermentum. Sed in dolor porta nisl.
-            </p>
-          </div>
         </div>
-      </section>
+        <!-- Monitor Stand -->
+        <div
+          class="flex flex-row h-[3vh] w-[12vh] bg-black justify-center"
+        ></div>
+
+        <div class="h-[3vh] w-[32vh] bg-black rounded-[1vh]"></div>
+      </div>
     </div>
   </body>
 </html>

@@ -6,16 +6,36 @@
     <title>Document</title>
   </head>
   <body class="w-full h-full max-h-screen bg-BackgroundColor overflow-hidden">
-    <div class="">
-      <app-navbar></app-navbar>
-      <div id="main-container" class="w-full h-60vh flex flex-row text-white">
-        <div id="home-quote" class="h-full flex items-center m-2">
-          <p class="text-justify">
-            Lorem ipsum dolor sit amet consectetur. Sem arcu tincidunt orci
-            egestas dictumst pharetra fermentum. Sed in dolor porta nisl.
+    <div class="overflow-x-hidden">
+      <app-navbar id="navbar"></app-navbar>
+      <section
+        id="presentation"
+        class="overflow-hidden flex flex-col justify-evenly text-black"
+      >
+        <div id="title" class="flex flex-col items-center">
+          <h1 class="text-3xl text-center">ABOUT US</h1>
+          <p class="text-center">
+            We are two students in software engineering at Polytechnique
+            Montreal
           </p>
         </div>
-      </div>
+        <div id="studentPresentation" class="flex flex-row justify-evenly m-5">
+          <div id="ThomasPresentation" class="flex flex-col items-center m-2">
+            <p class="text-xl text-center m-2">Thomas Mousseau</p>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur. Sem arcu tincidunt orci
+              egestas dictumst pharetra fermentum. Sed in dolor porta nisl.
+            </p>
+          </div>
+          <div id="AlexPresentation" class="flex flex-col items-center m-2">
+            <p class="text-xl text-center m-2">Alexandre Veillette</p>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur. Sem arcu tincidunt orci
+              egestas dictumst pharetra fermentum. Sed in dolor porta nisl.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
